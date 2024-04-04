@@ -10,8 +10,8 @@ using namespace std;
 #define fl(i,s,e) for(int i=s;i<e;i++)
 
 
-#define vsort(v) sort(v.begin(),v.end());
-#define vreverse(v) reverse(v.begin(),v.end());
+#define vsort(v) sort(v.begin(),v.end())
+#define vreverse(v) reverse(v.begin(),v.end())
 
 
 
