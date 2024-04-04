@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "*.ejs": "html",
-        "*.dart": "dart",
-        "xiosbase": "cpp"
-    }
-}
