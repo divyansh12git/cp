@@ -1,2 +1,20 @@
 vector sort:
 sort(v.begin(),v.end())
+
+
+/////traversing unordered map using iterator
+
+ unordered_map<int,int>::iterator it=mp.begin();
+    int ans=0;
+    while(it!=mp.end()){
+        if(it->second>2){
+            // cout<<it->first<<" " <<it->second<<" ";
+            ans+=(it->second)/3;
+        }
+        it++;
+    }
+
+
+/////traversing vector using iterator
+
+

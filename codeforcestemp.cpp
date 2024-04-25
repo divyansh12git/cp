@@ -1,4 +1,9 @@
 #include <bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<unordered_map>
+#include<string.h>
+#include<cmath>
 using namespace std;
 
 
@@ -17,7 +22,7 @@ using namespace std;
 
 void solve(){
     //code here...
-    cout<<"HIIII"<<endl;
+    
 }
 
 
