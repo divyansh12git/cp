@@ -13,7 +13,8 @@ using namespace std;
 #define vsort(v) sort(v.begin(),v.end())
 #define vreverse(v) reverse(v.begin(),v.end())
 
-#define mapit(it,d1,d2,map) unordered_map<d1,d2>::iterator it=map.begin(); 
+#define mapit(it,d1,d2,map) unordered_map<d1,d2>::iterator it=map.begin() 
+#define vecit(it,dt,vec) vector<dt>:: iterator it=vec.begin()
 
 void solve(){
     //code here...

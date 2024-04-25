@@ -17,4 +17,9 @@ sort(v.begin(),v.end())
 
 /////traversing vector using iterator
 
+ vector<int>:: iterator vit=v.begin();
+    while(vit!=v.end()){
+        cout<<*vit<<endl;
+        vit++;
+    }
 
