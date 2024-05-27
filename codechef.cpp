@@ -1,3 +1,7 @@
+#pragma GCC optimize("Ofast") 
+#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma") 
+#pragma GCC optimize("unroll-loops") 
+
 #include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
@@ -63,7 +67,7 @@ int main(){
     #ifndef ONLINE_JUDGE
         freopen("input.txt","r",stdin);
         freopen("output.txt","w",stdout);
-        freopen("Error.txt", "w", stderr);
+        // freopen("Error.txt", "w", stderr);
     #endif 
     ll t; cin>>t; while(t--)solve();
 
