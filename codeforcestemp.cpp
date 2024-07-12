@@ -9,6 +9,7 @@
 #include<set>
 #include<queue>
 #include<deque>
+#include<stack>
 #include<string.h>
 #include<cmath>
 #include<limits>
@@ -23,10 +24,10 @@ using namespace std;
 
 #define     INF                     1e18
 #define     PI                      3.141592653589793238462
+#define     MOD1                    1e9+7
+#define     MOD2                    1e9+9
+#define     MOD3                    998244353
 
-#define     ll                      long long
-#define     pii                     pair<int,int>
-#define     pll                     pair<ll,ll>
 #define     llfl(i,s,e)             for(long long i=s;i<e;i++)
 #define     fl(i,s,e)               for(int i=s;i<e;i++)
 #define     fa(i,z)                 for(auto i:z)
@@ -39,6 +40,33 @@ using namespace std;
 
 #define     mapit(it,d1,d2,map)     unordered_map<d1,d2>::iterator it=map.begin()
 #define     vecit(it,dt,vec)        vector<dt>:: iterator it=vec.begin();
+
+typedef long long ll;
+typedef long double lld;
+typedef unsigned long long ull;
+typedef pair<int,int> pii;
+typedef pair<long, long> pll;
+
+/*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
+
+void _print(int t) {cerr << t;}
+void _print(string t) {cerr << t;}
+void _print(char t) {cerr << t;}
+void _print(lld t) {cerr << t;}
+void _print(double t) {cerr << t;}
+void _print(ull t) {cerr << t;}
+ 
+template <class T, class V> void _print(pair <T, V> p);
+template <class T> void _print(vector <T> v);
+template <class T> void _print(set <T> v);
+template <class T, class V> void _print(map <T, V> v);
+template <class T> void _print(multiset <T> v);
+ 
+template <class T, class V> void _print(pair <T, V> p) {cerr << "{"; _print(p.F); cerr << ","; _print(p.S); cerr << "}";}
+template <class T> void _print(vector <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
+template <class T> void _print(set <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
+template <class T> void _print(multiset <T> v) {cerr << "[ "; for (T i : v) {_print(i); cerr << " ";} cerr << "]";}
+template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i : v) {_print(i); cerr << " ";} cerr << "]";}
 
 /*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
 
@@ -74,11 +102,11 @@ void solve(){
 int main(){
     ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 
-    // #ifndef ONLINE_JUDGE
-    //     freopen("input.txt","r",stdin);
-    //     freopen("output.txt","w",stdout);
-    //     freopen("Error.txt", "w", stderr);
-    // #endif 
+    #ifndef ONLINE_JUDGE
+        freopen("input.txt","r",stdin);
+        freopen("output.txt","w",stdout);
+        freopen("Error.txt", "w", stderr);
+    #endif 
     ll t; cin>>t; while(t--)solve();
 
 }
