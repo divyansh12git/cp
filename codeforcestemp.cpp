@@ -44,6 +44,8 @@ using namespace std;
 typedef long long ll;
 typedef long double lld;
 typedef unsigned long long ull;
+typedef vector<int> vi;
+typedef vector<ll> vll;
 typedef pair<int,int> pii;
 typedef pair<long, long> pll;
 
