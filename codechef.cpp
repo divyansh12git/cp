@@ -1,6 +1,3 @@
-#pragma GCC optimize("Ofast") 
-#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma") 
-#pragma GCC optimize("unroll-loops") 
 
 #include<iostream>
 #include<bits/stdc++.h>
@@ -21,8 +18,13 @@ using namespace std;
 #define     fl(i,s,e)               for(int i=s;i<e;i++)
 #define     fa(i,z)                 for(auto i:z)
 
+#define     frl(i,s,e)              for(int i=s;i>=e;i--)
+
 #define     pb                      push_back
 #define     pf                      push_front
+#define     ppb                     pop_back
+
+#define     all(x)                  (x).begin(), (x).end()
 
 #define     vsort(v)                sort(v.begin(),v.end())
 #define     vreverse(v)             reverse(v.begin(),v.end())
@@ -37,6 +39,11 @@ typedef vector<int> vi;
 typedef vector<ll> vll;
 typedef pair<int,int> pii;
 typedef pair<long, long> pll;
+typedef priority_queue<int> pqmax;
+typedef priority_queue<ll> pqmaxll;
+ typedef priority_queue<int,vector<int>,greater<int>> pqmin;
+ typedef priority_queue<ll,vector<ll>,greater<ll>> pqminll;
+
 
 /*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
 
@@ -61,7 +68,7 @@ template <class T, class V> void _print(map <T, V> v) {cerr << "[ "; for (auto i
 
 /*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
 
-ll gcd(ll a, ll b) {if (b == 0) {return a;}return gcd(b, a % b);}
+ll gcd(ll a, ll b) {if (b == 0) {return a;}return gcd(b, a % b);} //m
 bool isPrime(ll n) {if (n == 2) return true;if (n < 2) return false;for (int i = 2; i * i <= n; i++)if (n % i == 0) return false;return true;}
 bool isSorted(vector<ll> v) {llfl(i,0,v.size() - 1) {if (v[i] > v[i + 1])return 0;}return 1;}
 ll expo(ll a, ll b, ll mod) {ll res = 1; while (b > 0) {if (b & 1)res = (res * a) % mod; a = (a * a) % mod; b = b >> 1;} return res;}
@@ -84,22 +91,26 @@ void tres(bool t){ t?cout<<"YES":cout<<"NO";cout<<endl; }
 
 /*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
 
+bool istc=1;
+bool judge=1;
 
 
 void solve(){
     //code here...    
-    
+
 }
 
 
 int main(){
     ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 
-    #ifndef ONLINE_JUDGE
-        freopen("input.txt","r",stdin);
-        freopen("output.txt","w",stdout);
-        freopen("Error.txt", "w", stderr);
-    #endif 
-    ll t; cin>>t; while(t--)solve();
+    if(judge){
+        #ifndef ONLINE_JUDGE
+            freopen("input.txt","r",stdin);
+            freopen("output.txt","w",stdout);
+            freopen("Error.txt", "w", stderr);
+        #endif 
+    }
+    ll t; if(istc)cin>>t;else t=1; while(t--)solve();
 
 }

@@ -1,7 +1,3 @@
-#pragma GCC optimize("Ofast") 
-#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma") 
-#pragma GCC optimize("unroll-loops") 
-
 #include<iostream>
 #include<vector>
 #include<unordered_map>
@@ -32,8 +28,13 @@ using namespace std;
 #define     fl(i,s,e)               for(int i=s;i<e;i++)
 #define     fa(i,z)                 for(auto i:z)
 
+#define     frl(i,s,e)              for(int i=s;i>=e;i--)
+
 #define     pb                      push_back
 #define     pf                      push_front
+#define     ppb                     pop_back
+
+#define     all(x)                  (x).begin(), (x).end()
 
 #define     vsort(v)                sort(v.begin(),v.end())
 #define     vreverse(v)             reverse(v.begin(),v.end())
@@ -48,6 +49,11 @@ typedef vector<int> vi;
 typedef vector<ll> vll;
 typedef pair<int,int> pii;
 typedef pair<long, long> pll;
+typedef priority_queue<int> pqmax;
+typedef priority_queue<ll> pqmaxll;
+ typedef priority_queue<int,vector<int>,greater<int>> pqmin;
+ typedef priority_queue<ll,vector<ll>,greater<ll>> pqminll;
+
 
 /*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
 
@@ -95,22 +101,26 @@ void tres(bool t){ t?cout<<"YES":cout<<"NO";cout<<endl; }
 
 /*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
 
+bool istc=1;
+bool judge=1;
 
 
 void solve(){
     //code here...    
-    
+
 }
 
 
 int main(){
     ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);
 
-    #ifndef ONLINE_JUDGE
-        freopen("input.txt","r",stdin);
-        freopen("output.txt","w",stdout);
-        freopen("Error.txt", "w", stderr);
-    #endif 
-    ll t; cin>>t; while(t--)solve();
+    if(judge){
+        #ifndef ONLINE_JUDGE
+            freopen("input.txt","r",stdin);
+            freopen("output.txt","w",stdout);
+            freopen("Error.txt", "w", stderr);
+        #endif 
+    }
+    ll t; if(istc)cin>>t;else t=1; while(t--)solve();
 
 }
