@@ -41,8 +41,8 @@ typedef pair<int,int> pii;
 typedef pair<long, long> pll;
 typedef priority_queue<int> pqmax;
 typedef priority_queue<ll> pqmaxll;
- typedef priority_queue<int,vector<int>,greater<int>> pqmin;
- typedef priority_queue<ll,vector<ll>,greater<ll>> pqminll;
+typedef priority_queue<int,vector<int>,greater<int>> pqmin;
+typedef priority_queue<ll,vector<ll>,greater<ll>> pqminll;
 
 
 /*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
