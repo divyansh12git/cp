@@ -1,7 +1,12 @@
+// Author: *   Divyansh Gupta ( divyansh_8 )   *
 
-#include<iostream>
 #include<bits/stdc++.h>
+
+#include <ext/pb_ds/assoc_container.hpp> // Common file
+#include <ext/pb_ds/tree_policy.hpp> // Including tree_order_statistics_node_update
+
 using namespace std;
+using namespace __gnu_pbds;
 
 /*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
 
@@ -37,15 +42,19 @@ typedef long double lld;
 typedef unsigned long long ull;
 typedef vector<int> vi;
 typedef vector<ll> vll;
+typedef vector<vector<int>> vvi;
+typedef vector<vector<ll>>vvll;
 typedef pair<int,int> pii;
 typedef pair<long, long> pll;
 typedef vector<pii> vpii;
 typedef vector<pll> vpll;
+typedef vector<vector<pii>>vvpii;
+typedef vector<vector<pll>>vvpll;
 typedef priority_queue<int> pqmax;
 typedef priority_queue<ll> pqmaxll;
 typedef priority_queue<int,vector<int>,greater<int>> pqmin;
 typedef priority_queue<ll,vector<ll>,greater<ll>> pqminll;
-
+typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update> pbds; // find_by_order, order_of_key//ordered set
 
 /*_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _*/
 
